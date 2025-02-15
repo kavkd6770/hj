@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>💕 How well do you know me? 💕</h1>
+        <form id="quizForm">
+
+            <div class="question">
+                <label>1. Do you like me? 💖</label>
+                <button type="button" onclick="selectAnswer(1, true)">Yes</button>
+                <button type="button" onclick="selectAnswer(1, false)">No</button>
+            </div>
+
+            <div class="question">
+                <label>2. Will you be my valentine? 🍕</label>
+                <button type="button" onclick="selectAnswer(2, true)">Yes</button>
+                <button type="button" onclick="selectAnswer(2, false)">No</button>
+            </div>
+
+            <button type="button" onclick="checkAnswers()">Submit 💌</button>
+        </form>
+    </div>
+</body>
+</html>
